@@ -1,8 +1,8 @@
 import React from 'react';
-import c1 from '../Images/c1.png';
-import c2 from '../Images/c2.png';
-import c3 from '../Images/c3.png';
-import c4 from '../Images/c4.png';
+import c1 from '../images/c1.png';
+import c2 from '../images/c2.png';
+import c3 from '../images/c3.png';
+import c4 from '../images/c4.png';
 
 const Process = () => {
   return (

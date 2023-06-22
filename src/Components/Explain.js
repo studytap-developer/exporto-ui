@@ -1,5 +1,5 @@
 import React , { useState } from 'react';
-import img1 from '../Images/img1.png'
+import img1 from '../images/img1.png'
 
 const Explain = () => {
   const [showModal, setShowModal] = useState(false);
