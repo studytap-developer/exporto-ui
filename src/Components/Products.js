@@ -43,7 +43,7 @@ const Products = () => {
           }
         </div>
       </div>
-      <BannerText classNames='px-[200px]' />
+      {/* <BannerText classNames='px-[200px]' /> */}
     </>
   )
 }
