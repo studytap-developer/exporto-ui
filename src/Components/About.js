@@ -8,8 +8,8 @@ import logo from '../images/logo.png'
 const Popup = ({ onClose }) => (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="absolute inset-0 bg-black opacity-75"></div>
-      <div className="relative bg-white w-[80%] h-[60%] px-4 py-9">
-        <div className="flex justify-end">
+      <div className="relative bg-white w-[80%] px-4 py-4">
+        <div className="flex justify-end pb-3">
           <button className="text-gray-600 hover:text-gray-900" onClick={onClose}>
             <svg
               xmlns={logo}
@@ -62,24 +62,26 @@ const About = () => {
 
 
 
-    <div  className='w-full  bg-white flex flex-col justify-between'>
-      <h1 className='text-center text-sky-500 text-2xl'>WELCOME TO EXPORTO EXPORTS</h1>
-        <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
-        <div>
-                <img className='w-full   h-[90%] rounded-md  px-2 py-8' src={Herobg} alt="/" />
-            </div>
-            <div className='flex flex-col justify-center md:items-start w-full px-2 py-8'>
-                <p className='text-gray-800'>EXPORTO Enterprises  is based in India! We are a dynamic and reliable business that specializes in facilitating  the exchange of goods and services  between India and the rest of the world. Our experienced team of professionals  is committed to providing you with efficient and cost-effective solutions for your importing and exporting needs.</p>
-                
-                <p className=' text-gray-800'>Whether you are looking to import raw materials, finished products, or to export high-quality Indian goods to market in your country, we have the expertise and resources to help you succeed.</p>
-                <p className='text-gray-800'>At our company, we value transparency, integrity, and customer satisfaction. We believe in building Long-term relationships with our clients by providing personalized service, timely communication, and reliable delivery. Our goal is to help you achieve your business objectives by minimizing risks, maximizing opportunities, and optimizing your supply chain.</p>
-                <p className='text-gray-800'>So, whether you are a small business or a multinational corporation, we are here to support you every step of the way. Contact us today to learn more about how we can help you succeed in the global marketplace.</p>
-
-             
-                <button className='py-1 px-1 sm:w-[30%] my-4 bg-sky-500  rounded-md ' onClick={openPopup}>Know More</button>
-                {isOpen && <Popup onClose={closePopup} />}
-            </div>           
+    <div  className='w-full  bg-white flex flex-col justify-between' name='about'>
+      <h1 className='text-center text-sky-500 text-2xl mt-3'>WELCOME TO EXPORTO EXPORTS</h1>
+      <div className='grid md:grid-cols-2 max-w-[1240px] m-auto px-2 pt-5 gap-4'>
+        <div className='rounded-md'>
+          <img className='w-full object-cover h-full rounded-md' src='/images/cargo-goods.jpg' alt="/" />
         </div>
+        <div className='md:items-start w-full'>
+          <p className='text-gray-800'>EXPORTO Enterprises  is based in India! We are a dynamic and reliable business that specializes in facilitating  the exchange of goods and services  between India and the rest of the world. Our experienced team of professionals  is committed to providing you with efficient and cost-effective solutions for your importing and exporting needs.</p>
+          
+          <p className=' text-gray-800'>Whether you are looking to import raw materials, finished products, or to export high-quality Indian goods to market in your country, we have the expertise and resources to help you succeed.</p>
+          <p className='text-gray-800'>At our company, we value transparency, integrity, and customer satisfaction. We believe in building Long-term relationships with our clients by providing personalized service, timely communication, and reliable delivery. Our goal is to help you achieve your business objectives by minimizing risks, maximizing opportunities, and optimizing your supply chain.</p>
+          <p className='text-gray-800'>So, whether you are a small business or a multinational corporation, we are here to support you every step of the way. Contact us today to learn more about how we can help you succeed in the global marketplace.</p>
+
+          <div className='flex justify-center'>
+            <button className='py-2 px-6 my-4 bg-sky-500 rounded-md w-full sm:w-fit ' onClick={openPopup}>Know More</button >
+          </div>
+          
+          {isOpen && <Popup onClose={closePopup} />}
+        </div>           
+      </div>
     </div>
   )
 }

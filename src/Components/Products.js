@@ -30,8 +30,8 @@ const Product = ({name, description, image}) => {
 
 const Products = () => {
   return (
-    <>
-      <div className='my-[20px] px-2'>
+    <div name='products'>
+      <div className='py-[40px] px-2'>
         <div className='mt-3 mb-3'>
           <h1 className='text-center text-2xl'> OUR <span className='text-sky-500'> PRODUCTS </span>  </h1>
           <h2 className='text-center text-2xl'>PRODUCTS WE EXPORTS </h2>
@@ -47,7 +47,7 @@ const Products = () => {
 
       <h1 className='text-center text-sky-500 mb-4 text-lg underline '>Tell Us What Other Products That You Are Looking For ? </h1>
       {/* <BannerText classNames='px-[200px]' /> */}
-    </>
+    </div>
   )
 }
 
