@@ -1,27 +1,30 @@
 
-import Topnav from './Components/Topnav';
-import Navbar from './Components/Navbar';
-import Hero from './Components/Hero';
-import Explain from './Components/Explain';
-import Products from './Components/Products';
-import Process from './Components/Process';
-import Contact from './Components/Contact';
-import Footer from './Components/Footer';
+import Navbar from './components/Navbar';
+import './App.css';
+import Topnav from './components/Topnav';
+import Hero from './components/Hero';
+import About from './components/About';
+import Products from './components/Products';
+import Flow from './components/Flow';
+import Certifications from './components/Certifications';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <>
+   <>
    <Topnav/>
-   <Navbar/>
-    <Hero/>
-    <Explain/>
-    <Products/>
-    <Process/>
-    <Contact/>
-    <Footer/>
-
-    </>
+   <Navbar />
+   <Hero/>
+   <About/>
+   <Products/>
+   <Flow/>
+   <Certifications/>
+   <Contact/>
+   <Footer/>
    
+   </>
   );
 }
 

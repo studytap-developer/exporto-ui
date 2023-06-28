@@ -1,54 +1,59 @@
 import React from 'react';
 import logo from '../images/logo.png';
+ 
+
+
 
 const Footer = () => {
   return (
-    <div>
-      
-    <footer className="bg-[url('footer2.jpg')] bg-cover bg-bottom sm:flex min-h-[200px]   px-[10px] text-white  py-5">
-        <div className="mx-auto w-full max-w-screen-xl">
-          <div className="grid grid-cols-2 gap-8 px-4 py-2 lg:py-8 md:grid-cols-4">
-            <div>
-               <img src={logo} alt='' className=''/>
+    <div className='w-full h-[30%] text-white py-4 px-2 ' 
+    style={{
+        backgroundImage: `url(${require('../images/footer2.jpg')})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}>
 
+
+
+
+        <div className='max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-4 border-b-2 border-gray-600 py-8'>
+            <div>
+               <img src= {logo } alt=''/>
             </div>
             <div>
-            <h2 className="mb-6 text-sm font-semibold uppercase ">Address</h2>
-                <ul className="text-white-500 dark:text-gray-400 font-medium ">
-                <li>Shree gajanana enterprises LLP</li>
-                <li> Study Tap</li>
-                <li>8-2-289/7, Second Floor, Road No : 14,</li>
-                <li> Venkat Nagar, Banjara Hills ,</li>
-                <li>Hyderabad, Telangana.</li>
-                   
+                
+                <ul>
+                    <li><h3 className='font-bold uppercase underline  '>Address</h3></li>
+                    <li className='py-1'>Exporto Enterprises LLP</li>
+                    <li className='py-1'>8-2-289/7, Second Floor, Road No : 14, </li>
+                    <li className='py-1'>Venkat Nagar, Banjara Hills</li>
+                    <li className='py-1'>Hyderabad, Telangana</li>
                 </ul>
             </div>
             <div>
-            <h2 className="mb-6 text-sm font-semibold text-white-500 uppercase dark:text-white ">Contact Us</h2>
-                <ul className="text-white-500 dark:text-gray-400 font-medium ">
-                    <li>Call us on :</li>
-                    <li className='mb-4'>
-                    <a href="#" class="hover:underline"> +91 6304-702631</a>
-                    </li>
-
-                    <li>Email Us On:</li>
-                    <li className='mb-4'>
-                    <a href="#" class="hover:underline">studytap21@gmail.com</a>
-                    </li>
-
-          
+             
+                <ul>
+                    <li> <h6 className='font-bold uppercase underline'>Contact Us</h6></li>
+                    <li className='py-1'>Call us on : </li>
+                    <li className='py-1'>+91 7674946379</li>
+                    <li className='py-1'>Email us on :</li>
+                    <li className='py-1'>exportoenterprises@gmail.com</li>
+                  
                 </ul>
             </div>
             <div>
-                <h2 className="mb-6 text-sm font-semibold text-white-500 uppercase dark:text-white "> Social Media</h2>
                
-    
-                    <div class="flex mt-4 space-x-6  md:mt-0 ">
-                <a href="https://www.facebook.com/Study-Tap-109305745119447" class="text-blue-400 dark:hover:text-white">
+               
+               
+               
+               
+                <h6 className='font-bold uppercase underline'>Social Media </h6>
+                <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0 ">
+                <a href="https://www.facebook.com/people/ExportoEnterprisesofficial/100092317192985/?mibextid=ZbWKwL" class="text-blue-400 dark:hover:text-white">
                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                     <span class="sr-only">Facebook page</span>
                 </a>
-                <a href="https://www.instagram.com/studytap.official/" className="text-pink-400  dark:hover:text-white">
+                <a href="https://www.instagram.com/exportoenterprises.official/?igshid=MzRlODBiNWFlZA%3D%3D" className="text-pink-400  dark:hover:text-white">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
                     <span className="sr-only">Instagram page</span>
                 </a>
@@ -57,19 +62,27 @@ const Footer = () => {
                     <span className="sr-only">Twitter page</span>
                 </a>
                
-            </div>  
-    
-             
-            </div>  
+            </div> 
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+           
         </div>
-        
+
+        <div className='  text-center text-white'>
+        <p className='py-1 text-center'>2023 Workflow, LLC. All rights reserved</p>
+       
         </div>
-    </footer>
-    <div className='text-center bg-slate-100 p-2' >
-    Copyright ©2023 All rights reserved
     </div>
-    
-        </div>
   )
 }
 

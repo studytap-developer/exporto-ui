@@ -1,0 +1,87 @@
+
+import React,{useState} from 'react';
+import Herobg from '../images/Herobg.png';
+import logo from '../images/logo.png'
+
+
+
+const Popup = ({ onClose }) => (
+    <div className="fixed inset-0 flex items-center justify-center z-50">
+      <div className="absolute inset-0 bg-black opacity-75"></div>
+      <div className="relative bg-white w-[80%] h-[60%] px-4 py-9">
+        <div className="flex justify-end">
+          <button className="text-gray-600 hover:text-gray-900" onClick={onClose}>
+            <svg
+              xmlns={logo}
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div className="overflow-y-auto h-64">
+          <img className="mx-auto mb-1" src={logo} alt=" " />
+          <p>Embarking on a remarkable family legacy, <b>Exporto Enterprises LLP</b> is the brainchild of <b>Mr. Konijeti Mallikarjuna Prasad</b> and his son, <b>Konijeti Venkata Mahesh Gupta</b>. For over <b>52</b> years, <b>Mr. Konijeti Mallikarjuna Prasad </b> has successfully led Madhu Traders in the local red chilli business, earning a reputation for excellence.</p> 
+          <p>With the next generation taking the lead, <b>Konijeti Venkata Mahesh Gupta</b> brings a fresh perspective and a burning ambition to expand the business beyond local boundaries. Together, they have established <b> Exporto Enterprises LLP,</b> with Konijeti Venkata Mahesh Gupta at the forefront as the driving force behind the company's export operations.</p> 
+          <p> <b>Konijeti Venkata Mahesh Gupta's</b>  vision and passion for growth have fueled our desire to reach new markets and share our superior agricultural products on a global scale. While honoring his father's legacy, <b>Konijeti Venkata Mahesh Gupta</b> embraces the challenge of managing and propelling <b>Exporto Enterprises LLP</b> towards international success.</p> 
+          <p>With <b>Konijeti Venkata Mahesh Gupta's </b>leadership and dedication to excellence, we are committed to delivering top-quality products and impeccable service to our valued customers. The combination of <b>Mr. Konijeti Mallikarjuna Prasad's </b>expertise and <b>Konijeti Venkata Mahesh Gupta's</b> entrepreneurial spirit sets us on a path of unparalleled success and expansion in the global marketplace.</p><br />
+          <p>Join us on this extraordinary journey as we build upon the strong foundation established by <b>Mr. Konijeti Mallikarjuna Prasad,</b> and together, we make <b>Exporto Enterprises LLP</b> a shining example of excellence in the export industry.</p><br />
+        </div>
+      </div>
+    </div>
+  );
+
+
+
+
+
+
+const About = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openPopup = () => {
+      setIsOpen(true);
+    };
+  
+    const closePopup = () => {
+      setIsOpen(false);
+    };
+
+
+
+  return (
+
+
+
+    <div  className='w-full  bg-white flex flex-col justify-between'>
+      <h1 className='text-center text-sky-500 text-2xl'>WELCOME TO EXPORTO EXPORTS</h1>
+        <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
+        <div>
+                <img className='w-full   h-[90%] rounded-md  px-2 py-8' src={Herobg} alt="/" />
+            </div>
+            <div className='flex flex-col justify-center md:items-start w-full px-2 py-8'>
+                <p className='text-gray-800'>EXPORTO Enterprises  is based in India! We are a dynamic and reliable business that specializes in facilitating  the exchange of goods and services  between India and the rest of the world. Our experienced team of professionals  is committed to providing you with efficient and cost-effective solutions for your importing and exporting needs.</p>
+                
+                <p className=' text-gray-800'>Whether you are looking to import raw materials, finished products, or to export high-quality Indian goods to market in your country, we have the expertise and resources to help you succeed.</p>
+                <p className='text-gray-800'>At our company, we value transparency, integrity, and customer satisfaction. We believe in building Long-term relationships with our clients by providing personalized service, timely communication, and reliable delivery. Our goal is to help you achieve your business objectives by minimizing risks, maximizing opportunities, and optimizing your supply chain.</p>
+                <p className='text-gray-800'>So, whether you are a small business or a multinational corporation, we are here to support you every step of the way. Contact us today to learn more about how we can help you succeed in the global marketplace.</p>
+
+             
+                <button className='py-1 px-1 sm:w-[30%] my-4 bg-sky-500  rounded-md ' onClick={openPopup}>Know More</button>
+                {isOpen && <Popup onClose={closePopup} />}
+            </div>           
+        </div>
+    </div>
+  )
+}
+
+export default About
