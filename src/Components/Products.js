@@ -9,9 +9,9 @@ import redchilli from  '../images/redmirchi.png';
 
 
 const productsList = [
-  { name: "red chilli", description: "Some description here for red chilli.", image: redchilli},
-  { name: "Cow dung", description: "Some description here for cow dung.", image: cowdung},
-  { name: "green chilli ", description: "Some description here for red chilli powder.", image: redchilli_powder},
+  { name: "red chilli", description: "A spicy and fiery pepper commonly used as a seasoning or ingredient in various cuisines.", image: redchilli},
+  { name: "Cow dung", description: "Animal waste produced by cows, often used as fertilizer in agriculture and fuel in some regions.", image: cowdung},
+  { name: "green chilli ", description: "A spicy and vibrant addition to any dish, adding a fiery kick to your taste buds.", image: redchilli_powder},
 ]
 
 const Product = ({name, description, image}) => {

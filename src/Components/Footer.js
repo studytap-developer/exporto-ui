@@ -21,9 +21,10 @@ const Footer = () => {
                 <ul>
                     <li><h3 className='font-bold uppercase underline  '>Address</h3></li>
                     <li className='py-1'>Exporto Enterprises LLP</li>
-                    <li className='py-1'>8-2-289/7, Second Floor, Road No : 14, </li>
-                    <li className='py-1'>Venkat Nagar, Banjara Hills</li>
-                    <li className='py-1'>Hyderabad, Telangana</li>
+                    <li className='py-1'> D.No. 8-2-289/7, 3rd floor </li>
+                    <li className='py-1'> Road No-14,Banjara Hills,</li>
+                    <li className='py-1 '>Hyderabad, 500034 </li>
+                    <li className='py-1 '>Telangana </li>
                 </ul>
             </div>
             <div className='w-full md:w-auto'>
@@ -33,7 +34,7 @@ const Footer = () => {
                     <li className='py-1'>Call us on : </li>
                     <li className='py-1'>+91 7674946379</li>
                     <li className='py-1'>Email us on :</li>
-                    <li className='py-1'>exportoenterprises@gmail.com</li>
+                    <li className='py-1'>contact.exportoenterprises@gmail.com</li>
                   
                 </ul>
             </div>
