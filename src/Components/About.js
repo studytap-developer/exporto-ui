@@ -1,14 +1,14 @@
 
 import React,{useState} from 'react';
-import Herobg from '../images/Herobg.png';
-import logo from '../images/logo.png'
+
+import logo from '../images/logo.png';
 
 
 
 const Popup = ({ onClose }) => (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="absolute inset-0 bg-black opacity-75"></div>
-      <div className="relative bg-white w-[80%] px-4 py-4">
+      <div className="relative bg-green-950 w-[80%] px-4 py-4">
         <div className="flex justify-end pb-3">
           <button className="text-gray-600 hover:text-gray-900" onClick={onClose}>
             <svg
@@ -27,13 +27,13 @@ const Popup = ({ onClose }) => (
             </svg>
           </button>
         </div>
-        <div className="overflow-y-auto h-64">
+        <div className="overflow-y-auto h-64 , text-gray-500">
           <img className="mx-auto mb-1" src={logo} alt=" " />
-          <p>Embarking on a remarkable family legacy, <b>Exporto Enterprises LLP</b> is the brainchild of <b>Mr. Konijeti Mallikarjuna Prasad</b> and his son, <b>Konijeti Venkata Mahesh Gupta</b>. For over <b>52</b> years, <b>Mr. Konijeti Mallikarjuna Prasad </b> has successfully led Madhu Traders in the local red chilli business, earning a reputation for excellence.</p> 
-          <p>With the next generation taking the lead, <b>Konijeti Venkata Mahesh Gupta</b> brings a fresh perspective and a burning ambition to expand the business beyond local boundaries. Together, they have established <b> Exporto Enterprises LLP,</b> with Konijeti Venkata Mahesh Gupta at the forefront as the driving force behind the company's export operations.</p> 
-          <p> <b>Konijeti Venkata Mahesh Gupta's</b>  vision and passion for growth have fueled our desire to reach new markets and share our superior agricultural products on a global scale. While honoring his father's legacy, <b>Konijeti Venkata Mahesh Gupta</b> embraces the challenge of managing and propelling <b>Exporto Enterprises LLP</b> towards international success.</p> 
-          <p>With <b>Konijeti Venkata Mahesh Gupta's </b>leadership and dedication to excellence, we are committed to delivering top-quality products and impeccable service to our valued customers. The combination of <b>Mr. Konijeti Mallikarjuna Prasad's </b>expertise and <b>Konijeti Venkata Mahesh Gupta's</b> entrepreneurial spirit sets us on a path of unparalleled success and expansion in the global marketplace.</p><br />
-          <p>Join us on this extraordinary journey as we build upon the strong foundation established by <b>Mr. Konijeti Mallikarjuna Prasad,</b> and together, we make <b>Exporto Enterprises LLP</b> a shining example of excellence in the export industry.</p><br />
+          <p>Embarking on a remarkable family legacy, <b className='text-white'>Exporto Enterprises LLP</b> is the brainchild of <b className='text-white'>Mr. Konijeti Mallikarjuna Prasad</b> and his son, <b className='text-white'>Konijeti Venkata Mahesh Gupta</b>. For over <b className='text-white'>52</b> years, <b className='text-white'>Mr. Konijeti Mallikarjuna Prasad </b> has successfully led Madhu Traders in the local red chilli business, earning a reputation for excellence.</p> 
+          <p>With the next generation taking the lead, <b className='text-white'>Konijeti Venkata Mahesh Gupta(Founder & CEO)</b> brings a fresh perspective and a burning ambition to expand the business beyond local boundaries. Together, they have established <b className='text-white'> Exporto Enterprises LLP,</b> with Konijeti Venkata Mahesh Gupta at the forefront as the driving force behind the company's export operations.</p> 
+          <p> <b className='text-white'>Konijeti Venkata Mahesh Gupta's</b>  vision and passion for growth have fueled our desire to reach new markets and share our superior agricultural products on a global scale. While honoring his father's legacy, <b className='text-white'>Konijeti Venkata Mahesh Gupta</b> embraces the challenge of managing and propelling <b className='text-white'>Exporto Enterprises LLP</b> towards international success.</p> 
+          <p>With <b className='text-white'>Konijeti Venkata Mahesh Gupta's </b>leadership and dedication to excellence, we are committed to delivering top-quality products and impeccable service to our valued customers. The combination of <b>Mr. Konijeti Mallikarjuna Prasad's </b>expertise and <b>Konijeti Venkata Mahesh Gupta's</b> entrepreneurial spirit sets us on a path of unparalleled success and expansion in the global marketplace.</p><br />
+          <p>Join us on this extraordinary journey as we build upon the strong foundation established by <b className='text-white'>Mr. Konijeti Mallikarjuna Prasad,</b> and together, we make <b className='text-white'>Exporto Enterprises LLP</b> a shining example of excellence in the export industry.</p><br />
         </div>
       </div>
     </div>

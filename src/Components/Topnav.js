@@ -11,7 +11,7 @@ const Topnav = () => {
       </div>
       <div className="flex items-center px-1">
         <LuPhoneCall className="text-green-900 mt-1 mr-2" />
-        +91 7674946379
+        +91 6301169527 , +91 7674946379 
       </div>
     </div>
   );
