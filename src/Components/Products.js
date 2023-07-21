@@ -1,8 +1,8 @@
 import React from 'react';
 
-import cowdung from '../images/cowdung.png';
-import redchilli_powder from '../images/greenchilli.jpg';
-import redchilli from  '../images/redmirchi.png';
+import cowdung from '../Images/cowdung.png';
+import redchilli_powder from '../Images/greenchilli.jpg';
+import redchilli from  '../Images/redmirchi.png';
 
 
 

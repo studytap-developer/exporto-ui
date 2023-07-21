@@ -1,8 +1,8 @@
 import React from 'react';
-import pro from '../images/pro.png';
-import sort from '../images/sort.png';
-import packing from '../images/packing.png';
-import shipping from '../images/shipping.png';
+import pro from '../Images/pro.png';
+import sort from '../Images/sort.png';
+import packing from '../Images/packing.png';
+import shipping from '../Images/shipping.png';
 
 
 const Flow = () => {
