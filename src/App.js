@@ -1,14 +1,15 @@
 
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 import './App.css';
-import Topnav from './components/Topnav';
-import Hero from './components/Hero';
-import About from './components/About';
-import Products from './components/Products';
-import Flow from './components/Flow';
-import Certifications from './components/Certifications';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Topnav from './components/topnav';
+import Hero from './components/hero';
+
+import Products from './components/products';
+import Flow from './components/flow';
+import Certifications from './components/certifications';
+import Contact from './components/contact';
+import Footer from './components/footer';
+import About from './components/about';
 
 
 function App() {
