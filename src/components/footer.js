@@ -13,11 +13,11 @@ const Footer = () => {
         backgroundPosition: 'center',
       }}>
 
-        <div className='items-center flex flex-col md:flex-row md:justify-around border-b-2 border-gray-600 py-8 items-start'>
-            <div className='flex justify-center w-full'>
+        <div className='items-center flex flex-col md:flex-row md:justify-around border-b-2 border-gray-600 py-8 sm:items-start'>
+            <div className='flex justify-center w-full sm:w-auto'>
                <img src= {logo } alt=''/>
             </div>
-            <div className='w-full md:w-auto mt-5'>                
+            <div className='w-full md:w-auto sm:mt-6'>                
                 <ul>
                     <li><h3 className='font-bold uppercase underline  '>Address</h3></li>
                     <li className='py-1'>Exporto Enterprises LLP</li>
@@ -27,7 +27,7 @@ const Footer = () => {
                     <li className='py-1 '>Telangana </li>
                 </ul>
             </div>
-            <div className='w-full md:w-auto mt-5'>
+            <div className='w-full md:w-auto sm:mt-5'>
              
                 <ul>
                     <li> <h6 className='font-bold uppercase underline'>Contact Us</h6></li>
@@ -38,7 +38,7 @@ const Footer = () => {
                   
                 </ul>
             </div>
-            <div className='w-full md:w-auto mt-5'> 
+            <div className='w-full md:w-auto sm:mt-5'> 
                 <ul>
                     <li>
                         <h6 className='font-bold uppercase underline'>Social Media </h6>
