@@ -3,21 +3,21 @@ import React from 'react';
 import cowdung from '../images/cowdung.png';
 import redchilli_powder from '../images/greenchilli.jpg';
 import redchilli from  '../images/redmirchi.png';
-
-
-
+import maze from '../images/maze.jpg' 
 
 
 const productsList = [
-  { name: "red chilli", description: "A spicy and fiery pepper commonly used as a seasoning or ingredient in various cuisines.", image: redchilli},
-  { name: "Cow dung", description: "Animal waste produced by cows, often used as fertilizer in agriculture and fuel in some regions.", image: cowdung},
-  { name: "green chilli ", description: "A spicy and vibrant addition to any dish, adding a fiery kick to your taste buds.", image: redchilli_powder},
+  { name: "red chilli", description: "A fiery spice used in cooking for flavor and heat.", image: redchilli},
+  { name: "Cow dung", description: "Eco-friendly fertilizer and energy source.", image: cowdung},
+  { name: "green chilli ", description: " Adds a zing to dishes with its spicy kick.", image: redchilli_powder},
+  { name: "Maze ", description: " A versatile cereal crop with culinary and industrial uses.", image: maze}, 
 ]
+
 
 const Product = ({name, description, image}) => {
   return (
-    <div className='mb-[20px] flex flex-col'> 
-      <img src={image} alt='' className='rounded-lg'/>
+    <div className='mb-[20px]'> 
+      <img src={image} alt='' className='rounded-lg h-40 w-50 p-1 mx-auto'/>
       <div> 
         <h2 className='text-center text-lg uppercase mt-1'> {name} </h2>
         <div className='text-center'>
