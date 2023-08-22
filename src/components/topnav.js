@@ -9,13 +9,13 @@ const Topnav = () => {
   };
 
   return (
-    <div className="sticky top-0 bg-white h-6 flex justify-between px-1
+    <div className="sticky top-0 bg-white flex justify-between px-1
     ">
       <div className="flex items-center px-1">
         <TfiLocationPin className="text-green-900 mt-1 mr-1" />  
         Hyderabad
       </div>
-      <div className="flex items-center px-1">
+      <div className="flex items-center px-1 flex-wrap justify-end">
         <LuPhoneCall className="text-green-900 mt-1 mr-2" />
         <span
           onClick={() => handlePhoneClick('916301169527')}
