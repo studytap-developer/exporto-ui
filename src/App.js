@@ -10,6 +10,7 @@ import Certifications from './components/certifications';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import About from './components/about';
+import WhatsAppChatbox from './components/whatsappchatbox';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
    <Certifications/>
    <Contact/>
    <Footer/>
+   <WhatsAppChatbox/>
    
    </>
   );
