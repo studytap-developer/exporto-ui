@@ -32,7 +32,7 @@ const Contact = () => {
       <div
         className="flex items-center justify-center  bg-cover rounded-md md:mx-[20%]"
         style={{
-          backgroundImage: `url(${require('../images/contact.png')})`,
+          backgroundImage: `url(${require('../Images/contact.png')})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',          
           marginBottom: '5%',

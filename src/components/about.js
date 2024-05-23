@@ -1,7 +1,6 @@
 
 import React,{useState} from 'react';
-
-import logo from '../images/logo.png';
+import logo from '../Images/logo.png';
 
 
 

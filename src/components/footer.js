@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/logo.png';
+import logo from '../Images/logo.png';
  
 
 
@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className='w-full text-white py-4 px-2 ' 
     style={{
-        backgroundImage: `url(${require('../images/footer2.jpg')})`,
+        backgroundImage: `url(${require('../Images/footer2.jpg')})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}>

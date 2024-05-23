@@ -1,16 +1,16 @@
 import React from 'react';
 
-import cowdung from '../images/cowdung.png';
-import redchilli_powder from '../images/greenchilli.jpg';
-import redchilli from  '../images/redmirchi.png';
-import maze from '../images/maze.jpg' 
+import cowdung from '../Images/cowdung.png';
+import redchilli_powder from '../Images/greenchilli.jpg';
+import redchilli from  '../Images/redmirchi.png';
+import maze from '../Images/maze.jpg' 
 
 
 const productsList = [
   { name: "red chilli", description: "A fiery spice used in cooking for flavor and heat.", image: redchilli},
   { name: "Cow dung", description: "Eco-friendly fertilizer and energy source.", image: cowdung},
   { name: "green chilli ", description: " Adds a zing to dishes with its spicy kick.", image: redchilli_powder},
-  { name: "Maze ", description: " A versatile cereal crop with culinary and industrial uses.", image: maze}, 
+  { name: "Maize ", description: " A versatile cereal crop with culinary and industrial uses.", image: maze}, 
 ]
 
 
