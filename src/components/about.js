@@ -1,9 +1,6 @@
 
 import React,{useState} from 'react';
 import logo from '../Images/logo.png';
-
-
-
 const Popup = ({ onClose }) => (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="absolute inset-0 bg-black opacity-75"></div>

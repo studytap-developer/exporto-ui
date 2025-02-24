@@ -3,7 +3,6 @@ import c1 from '../Images/c1.png';
 import c2 from '../Images/c2.png';
 import c3 from '../Images/c3.png';
 import c4 from '../Images/c4.png';
-// Import the new images
 import c5 from '../Images/c5.png';
 import c6 from '../Images/c6.jpg';
 import c7 from '../Images/c7.jpg';
